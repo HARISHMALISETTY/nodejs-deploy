@@ -3,7 +3,7 @@ const { mongoose } = require("mongoose");
 
 function dbConnect(){
 mongoose
-  .connect("mongodb://localhost:27017/facebook")
+  .connect("mongodb+srv://malisettyharish:tHuGYpj3fFexSfc1@cluster0-1.vngqo.mongodb.net/facebook")
   .then(() => {
     console.log("connected to mongodb");
   })
