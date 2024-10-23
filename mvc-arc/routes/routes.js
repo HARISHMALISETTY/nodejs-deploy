@@ -24,5 +24,6 @@ const upload=multer({storage:storage})
 router.post("/signup",upload.single("profilePic"),authControllers.signup);
 router.post("/login",authControllers.login);
 router.get("/user",verifyToken,userController.getUsers);
+router.get("/",(req,res)=>{res.send("hello")})
 
 module.exports=router;
